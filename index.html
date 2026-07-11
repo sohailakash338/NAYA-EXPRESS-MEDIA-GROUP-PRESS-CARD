@@ -1,30 +1,144 @@
-<!DOCTYPE html>
-<html lang="ur" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Multan Express</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. WEBSITE LOGO FOR LINK SHARE -->
+    <title>Naya Express Media Group - Verification</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:title" content="Naya Express Media Group">
+    <meta property="og:description" content="VOICE OF TRUTH . STRENGTH OF NATION">
 </head>
+
 <body>
-<header>
-<h1>DAILY MULTAN EXPRESS</h1>
-<p>سچ کی رفتار</p>
-</header>
 
-<main>
-<h2>خوش آمدید</h2>
-<p>یہ ڈیلی ملتان ایکسپریس کی نمونہ ویب سائٹ ہے۔</p>
+<div>
+    <h3>Naya Express Media Group</h3>
+    <p>VOICE OF TRUTH . STRENGTH OF NATION</p>
+</div>
 
-<h3>ادارے کی معلومات</h3>
-<p>یہاں آپ ادارے، نمائندگان، پریس کارڈ ویریفکیشن اور رابطہ معلومات شامل کر سکتے ہیں۔</p>
+<div class="secure">
+    <svg fill="currentColor" viewBox="0 0 24 24" width="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+    Secure Verification
+</div>
 
-<h3>پریس کارڈ ویریفکیشن</h3>
-<p>اس صفحے کو QR کوڈ کے ساتھ منسلک کیا جا سکتا ہے۔</p>
-</main>
+<div class="main-title">NAYA EXPRESS MEDIA GROUP</div>
+<div class="member">MEMBER</div>
+<h1>VERIFICATION</h1>
+<p class="desc">Instantly verify the authenticity of any Naya Express press card or membership credential.</p>
 
-<footer>
-<p>© Daily Multan Express</p>
-</footer>
+<div class="verify-box" id="verifyBox">
+    <div class="label-green">ENTER CARD NUMBER</div>
+    <input type="text" id="cardNo" placeholder="Enter your press card number">
+    <button class="verify-btn" onclick="verifyCard()">VERIFY NOW »</button>
+</div>
+
+<div class="press-card" id="pressCard" style="display:none;">
+    <div class="card-header">NAYA EXPRESS MEDIA GROUP</div>
+    <div class="sub-header">DAILY NAYA EXPRESS</div>
+    <div class="status-bar">✓ Status: Active</div>
+    
+    <div class="card-body">
+        <!-- 2 PHOTO BOXES SIDE BY SIDE -->
+        <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin-bottom:20px;">
+            <!-- 1. PRESS CARD PHOTO -->
+            <div style="border:2px solid #800000; padding:5px; background:#fff;">
+                <img src="photo1.jpg" alt="Member Photo" style="width:180px; height:230px; object-fit:cover;">
+                <div style="font-size:13px; margin-top:5px; text-align:center; font-weight:700; color:#800000;">Member Photo</div>
+            </div>
+            
+            <!-- 2. CNIC PHOTO BOX - ONLY IMAGE NO NUMBER -->
+            <div style="border:2px dashed #800000; padding:5px; background:#fff;">
+                <img src="photo3.jpg" alt="CNIC Photo" style="width:180px; height:230px; object-fit:cover;">
+                <div style="font-size:13px; margin-top:5px; text-align:center; font-weight:700; color:#800000;">CNIC Card</div>
+            </div>
+        </div>
+        
+        <!-- MEMBER DETAIL - NO CNIC NUMBER SHOWN -->
+        <div><span class="label">Name:</span> Sadiq Akbar</div>
+        <div><span class="label">Designation:</span> District Reporter</div>
+        <div><span class="label">City:</span> Charsadda</div>
+        <div><span class="label">Valid Until:</span> 31-12-2026</div>
+        
+        <div class="chief-section">
+            <div class="chief-title">Chief Editor</div>
+            <div>Ghulam Raza Goraya</div>
+            <div style="color:#f4b400;margin-top:10px;font-size:17px;font-weight:700">Contact: 0346-7242941</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        This card is for identification purpose only | Naya Express Media Group
+    </div>
+</div>
+
+<!-- ANNOUNCEMENT SECTION -->
+<div style="max-width:900px; margin:40px auto; background:#fff; border:3px solid #800000; padding:20px; text-align:center; font-family: 'Noto Nastaliq Urdu', serif;">
+    <h2 style="font-size:32px; color:#800000; margin-bottom:20px; border-bottom:2px solid #C9A227; padding-bottom:10px;">اعلان تقرری</h2>
+    
+    <div style="display:flex; align-items:center; justify-content:center; gap:30px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:250px;">
+            <!-- 3. SAME MEMBER PHOTO = photo1.jpg -->
+            <img src="photo1.jpg" alt="Sadiq Akbar" style="width:100%; max-width:300px; border:3px solid #C9A227;">
+        </div>
+        <div style="flex:1.5; min-width:300px; text-align:right; direction:rtl; font-size:22px; line-height:2.2;">
+            <p><b>صدیق اکبر</b></p>
+            <p>کو</p>
+            <p style="background:#000; color:#fff; padding:5px 15px; display:inline-block; font-weight:700;">ڈسٹرکٹ رپورٹر</p>
+            <p>ضلع <b>چارسدہ</b> مقرر کیا گیا ہے</p>
+        </div>
+    </div>
+
+    <hr style="margin:20px 0; border:none; border-top:1px dashed #ccc;">
+
+    <div style="font-size:20px; line-height:2; direction:rtl;">
+        <p>سرکاری غیر سرکاری ادارے نوٹ فرما لیں</p>
+        <p style="background:#000; color:#fff; padding:8px 20px; display:inline-block; font-weight:700; margin-top:10px;">خبریں اشاعت کے لیے رابطہ کریں</p>
+        <!-- 4. APPOINTMENT LETTER IMAGE ADDED -->
+        <div style="margin-top:15px;">
+            <img src="photo2.jpg" alt="Appointment Letter" style="width:100%; max-width:500px; border:2px solid #800000;">
+        </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:25px; background:#000; color:#fff; padding:15px; flex-wrap:wrap;">
+        <div style="text-align:right; direction:rtl;">
+            <p style="font-size:18px;">چیف ایڈیٹر</p>
+            <p style="font-size:18px;">غلام رضا گورایہ</p>
+            <p style="font-size:20px; color:#C9A227; font-weight:700;">0346-7792566</p>
+        </div>
+        <div style="text-align:left;">
+            <p style="font-size:24px; font-weight:700;">روزنامہ نیا ایکسپریس</p>
+            <p style="font-size:18px;">لاہور / اسلام آباد</p>
+        </div>
+    </div>
+</div>
+
+<div class="how-title">HOW VERIFICATION WORKS</div>
+
+<div class="grid">
+    <div class="card"><div class="icon"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H4V5h16v14z"/><path d="M6 9h12v2H6z"/></svg></div><h4>Enter ID</h4><p>Type the member card serial or CNIC.</p></div>
+    <div class="card"><div class="icon"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></div><h4>Search</h4><p>System scans the official NEMG database.</p></div>
+    <div class="card"><div class="icon"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg></div><h4>Verify</h4><p>Credentials validated in real time.</p></div>
+    <div class="card"><div class="icon"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><h4>Result</h4><p>Full member details and active status.</p></div>
+</div>
+
+<div class="site-footer">
+    © 2026 Naya Express Media Group · <a href="#">Home</a> · <a href="#">Admin</a>
+</div>
+
+<script>
+function verifyCard(){
+    let no = document.getElementById('cardNo').value.trim();
+    if(no == "17103-0409235-3"){
+        document.getElementById('verifyBox').style.display = 'none';
+        document.getElementById('pressCard').style.display = 'block';
+        document.querySelector('.how-title').scrollIntoView({behavior:'smooth'});
+    } else if(no == ""){
+        alert('Please enter card number first');
+    } else {
+        alert('Invalid Card Number!');
+    }
+}
+</script>
+
 </body>
-</html>
